@@ -8,7 +8,7 @@ import Layout from '../components/Layout/Layout';
 const Login: React.FC = () => {
   const { state, connectWallet } = useWallet();
   const navigate = useNavigate();
-
+ 
   // Redirect to dashboard if already connected
   useEffect(() => {
     if (state.isConnected) {
